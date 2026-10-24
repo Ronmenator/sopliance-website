@@ -1,29 +1,29 @@
 # SOPliance website
 
-Website working folder: `D:\websites\Sopliance`.
+Working folder: `D:\websites\Sopliance`.
+Preview: https://ronmenator.github.io/sopliance-website/
 
-## Temporary hosting
+## Local preview
 
-GitHub Pages publishes the root of the `main` branch automatically after each push.
-Preview URL: https://ronmenator.github.io/sopliance-website/
-
-The initial site is plain HTML with no build dependencies. Open `index.html` locally to preview it.
-Use relative asset links so the site works under the GitHub Pages repository path and on a future host.
-
-## Publish updates
-
-Review changes, commit, and push to `main`:
+Requires Node.js 22 and Python 3:
 
 ```powershell
-git status
-git add <files-to-publish>
-git commit -m "Describe website changes"
-git push
+node scripts/build.mjs
+python -m http.server 4173 --directory dist
 ```
 
-## Final hosting
+Visit http://localhost:4173. Rebuild after changing positions. No npm installation is needed.
 
-SOPliance.com DNS and custom-domain settings are intentionally deferred until the final hosting provider is chosen.
-The site can be moved by uploading the static website files to that provider.
-Remove the development `noindex` meta tag when the final site is ready for search engines.
-Keep credentials and private client information out of website files.
+## Careers
+
+Upload or delete job description files in `positions/` and commit to `main`. The GitHub Actions workflow generates the searchable careers list and publishes it with the website. Read [positions/README.md](positions/README.md) for supported formats and naming guidance. No outdated or sample positions are published.
+
+## Publishing
+
+Review changes, commit the relevant files, and push to `main`. The `Publish website` workflow builds only public website files into `dist/` and deploys them to GitHub Pages. The source `jobs.json` is an empty fallback; deployment generates its own from the positions folder.
+
+## Final launch
+
+SOPliance.com domain settings are deferred until the final host is chosen. Upload the generated `dist/` directory to another static host. Retain the build command for automatic job updates. Remove development `noindex` metadata from both pages when ready for search engines.
+
+Logo: existing SOPliance brand asset. Infrastructure photo: Unsplash, https://images.unsplash.com/photo-1558494949-ef010cbdcc31. Typography: DM Sans and Manrope via Google Fonts. Contact and applications open the visitor's email app; no messages or résumés are stored by the site.
