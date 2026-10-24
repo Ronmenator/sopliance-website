@@ -27,3 +27,9 @@ Review changes, commit the relevant files, and push to `main`. The `Publish webs
 SOPliance.com domain settings are deferred until the final host is chosen. Upload the generated `dist/` directory to another static host. Retain the build command for automatic job updates. Remove development `noindex` metadata from both pages when ready for search engines.
 
 Logo: existing SOPliance brand asset. Team collaboration photo: Unsplash, https://images.unsplash.com/photo-1522071820081-009f0129c71c. Typography: DM Sans and Manrope via Google Fonts. Contact and applications open the visitor's email app; no messages or résumés are stored by the site.
+
+## Accessibility checks
+
+Run `node scripts/test-contrast.mjs` to verify the shared text, button, hover, icon, focus, and input-boundary color pairs. This check runs before publication. Both pages use solid backgrounds behind image text, visible keyboard focus, hidden decorative icons, and reduced-motion support.
+
+A rendered text-color check verified 84 homepage text elements with the mobile navigation expanded and 25 careers text elements without contrast failures on 2026-10-24. Primary buttons measure 5.58:1 and their hover state 4.62:1. These targeted checks do not constitute a full accessibility conformance audit.
