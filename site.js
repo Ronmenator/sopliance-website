@@ -33,7 +33,7 @@ async function loadJobs() {
         const heading = document.createElement('h3');
         heading.textContent = jobs.length ? 'No matching positions.' : 'New opportunities are on the way.';
         const message = document.createElement('p');
-        message.textContent = jobs.length ? 'Try another keyword or clear your search to see all available positions.' : 'We’re preparing our next set of opportunities. Confirmed positions will appear here as they become available. In the meantime, introduce yourself at info@sopliance.com.';
+        message.textContent = jobs.length ? 'Try another keyword or clear your search to see all available positions.' : 'We’re preparing our next set of opportunities. Confirmed positions will appear here as they become available. Please check back and apply directly to a listed position.';
         empty.append(heading, message);
         jobsList.append(empty);
         return;
