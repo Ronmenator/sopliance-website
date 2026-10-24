@@ -26,4 +26,4 @@ Review changes, commit the relevant files, and push to `main`. The `Publish webs
 
 SOPliance.com domain settings are deferred until the final host is chosen. Upload the generated `dist/` directory to another static host. Retain the build command for automatic job updates. Remove development `noindex` metadata from both pages when ready for search engines.
 
-Logo: existing SOPliance brand asset. Infrastructure photo: Unsplash, https://images.unsplash.com/photo-1558494949-ef010cbdcc31. Typography: DM Sans and Manrope via Google Fonts. Contact and applications open the visitor's email app; no messages or résumés are stored by the site.
+Logo: existing SOPliance brand asset. Team collaboration photo: Unsplash, https://images.unsplash.com/photo-1522071820081-009f0129c71c. Typography: DM Sans and Manrope via Google Fonts. Contact and applications open the visitor's email app; no messages or résumés are stored by the site.
