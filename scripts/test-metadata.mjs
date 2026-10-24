@@ -21,8 +21,8 @@ const jobs = JSON.parse(await read('jobs.json'));
 assert.equal(graph['@graph'].find(item => item['@type'] === 'ItemList').numberOfItems, jobs.length);
 const sitemap = await read('sitemap.xml');
 assert(sitemap.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'));
-assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]), [base.href, new URL('joinus.html', base).href]);
-for (const page of ['index.html', 'joinus.html']) {
+assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]), [base.href, ...['joinus.html', 'terms.html', 'privacy.html', 'cookies.html'].map(file => new URL(file, base).href)]);
+for (const page of ['index.html', 'joinus.html', 'terms.html', 'privacy.html', 'cookies.html']) {
   const html = await read(page);
   assert.equal([...html.matchAll(/rel="canonical"/g)].length, 1);
   assert(html.includes(`content="${config.indexable ? 'index, follow' : 'noindex, nofollow'}"`));

@@ -6,7 +6,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const output = path.join(root, 'dist');
 await rm(output, { recursive: true, force: true });
 await mkdir(path.join(output, 'positions'), { recursive: true });
-for (const file of ['index.html', 'joinus.html', 'styles.css', 'site.js', '.nojekyll']) {
+for (const file of ['index.html', 'joinus.html', 'terms.html', 'privacy.html', 'cookies.html', 'styles.css', 'site.js', '.nojekyll']) {
   await copyFile(path.join(root, file), path.join(output, file));
 }
 await cp(path.join(root, 'assets'), path.join(output, 'assets'), { recursive: true });

@@ -39,11 +39,11 @@ A rendered text-color check verified 84 homepage text elements with the mobile n
 
 Every build generates these files in `dist/` and publishes them at the website base URL:
 
-- `sitemap.xml`: canonical homepage and careers page URLs.
+- `sitemap.xml`: canonical URLs for the homepage, careers, and three policy pages.
 - `robots.txt`: crawl rules and the absolute sitemap location.
 - `llms.txt`: company summary and links to machine-readable sources.
 - `llms-full.txt`: expanded public page content and current position-description links.
-- `index.html.md` and `joinus.html.md`: Markdown page versions linked from each HTML page.
+- Markdown companions for all five pages: machine-readable page versions linked from each HTML page.
 - `structured-data.json`: Schema.org Organization, WebSite, Service, WebPage, CollectionPage, and current position ItemList objects.
 - `jobs.json`: the generated list of position documents.
 
@@ -52,3 +52,8 @@ Each built HTML page also contains canonical metadata and embedded JSON-LD. No J
 `site.config.json` controls the canonical base URL and indexing. The preview retains `noindex, nofollow`; creating a sitemap does not enable indexing. A robots file only controls crawling when served at the host root `/robots.txt`. The current GitHub Pages project URL is a subfolder, so its published robots file is ready for the final domain but does not control the entire github.io host.
 
 Run `node scripts/test-metadata.mjs` after building to verify discovery files, JSON-LD references, sitemap URLs, LLM links, and preview indexing. This test runs in GitHub Actions before deployment.
+
+
+## Website policy drafts
+
+`terms.html`, `privacy.html`, and `cookies.html` are linked from all footers and included in sitemap, JSON-LD, and LLM output. These are company-review drafts, dated October 24, 2026, reflecting the current static site, GitHub Pages hosting, Google Fonts connections, email applications, Florida company location, and confirmed sharing of applicant résumés with client organizations. The application and correspondence retention period remains unconfirmed. Confirm that period and obtain appropriate legal review before treating these as final policies. Revisit the policies whenever hosting or tracking changes.

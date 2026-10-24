@@ -9,7 +9,7 @@ try {
   await copyFile('scripts/build.mjs', path.join(fixture, 'scripts/build.mjs'));
   await copyFile('scripts/metadata.mjs', path.join(fixture, 'scripts/metadata.mjs'));
   await copyFile('site.config.json', path.join(fixture, 'site.config.json'));
-  for (const file of ['index.html', 'joinus.html', 'styles.css', 'site.js', '.nojekyll']) await copyFile(file, path.join(fixture, file));
+  for (const file of ['index.html', 'joinus.html', 'terms.html', 'privacy.html', 'cookies.html', 'styles.css', 'site.js', '.nojekyll']) await copyFile(file, path.join(fixture, file));
   for (let i = 1; i <= 55; i++) await writeFile(path.join(fixture, 'positions', `Support Technician ${i}.txt`), `Test description ${i}`);
   const special = 'Fiber & Desktop_Engineer #1.md';
   await writeFile(path.join(fixture, 'positions', special), 'Test description');
