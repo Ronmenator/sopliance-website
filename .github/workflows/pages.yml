@@ -21,6 +21,7 @@ jobs:
       - run: node scripts/test-build.mjs
       - run: node scripts/test-contrast.mjs
       - run: node scripts/build.mjs
+      - run: node scripts/test-metadata.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

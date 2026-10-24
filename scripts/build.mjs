@@ -1,6 +1,7 @@
 import { readdir, mkdir, copyFile, cp, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { generateMetadata } from './metadata.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = path.join(root, 'dist');
 await rm(output, { recursive: true, force: true });
@@ -20,4 +21,5 @@ for (const entry of entries) {
 }
 jobs.sort((a, b) => a.title.localeCompare(b.title, 'en', { numeric: true }));
 await writeFile(path.join(output, 'jobs.json'), `${JSON.stringify(jobs, null, 2)}\n`);
+await generateMetadata(root, output, jobs);
 console.log(`Built site with ${jobs.length} available positions.`);

@@ -24,7 +24,7 @@ Review changes, commit the relevant files, and push to `main`. The `Publish webs
 
 ## Final launch
 
-SOPliance.com domain settings are deferred until the final host is chosen. Upload the generated `dist/` directory to another static host. Retain the build command for automatic job updates. Remove development `noindex` metadata from both pages when ready for search engines.
+SOPliance.com domain settings are deferred until the final host is chosen. Upload the generated `dist/` directory to another static host. Retain the build command for automatic job updates. Set `baseUrl` to `https://sopliance.com/` and `indexable` to `true` in `site.config.json` at final launch, then rebuild. The build updates page indexing metadata and all generated URLs.
 
 Logo: existing SOPliance brand asset. Team collaboration photo: Unsplash, https://images.unsplash.com/photo-1522071820081-009f0129c71c. Typography: DM Sans and Manrope via Google Fonts. Contact and applications open the visitor's email app; no messages or résumés are stored by the site.
 
@@ -33,3 +33,22 @@ Logo: existing SOPliance brand asset. Team collaboration photo: Unsplash, https:
 Run `node scripts/test-contrast.mjs` to verify the shared text, button, hover, icon, focus, and input-boundary color pairs. This check runs before publication. Both pages use solid backgrounds behind image text, visible keyboard focus, hidden decorative icons, and reduced-motion support.
 
 A rendered text-color check verified 84 homepage text elements with the mobile navigation expanded and 25 careers text elements without contrast failures on 2026-10-24. Primary buttons measure 5.58:1 and their hover state 4.62:1. These targeted checks do not constitute a full accessibility conformance audit.
+
+
+## Sitemap, crawler files, LLM references, and structured data
+
+Every build generates these files in `dist/` and publishes them at the website base URL:
+
+- `sitemap.xml`: canonical homepage and careers page URLs.
+- `robots.txt`: crawl rules and the absolute sitemap location.
+- `llms.txt`: company summary and links to machine-readable sources.
+- `llms-full.txt`: expanded public page content and current position-description links.
+- `index.html.md` and `joinus.html.md`: Markdown page versions linked from each HTML page.
+- `structured-data.json`: Schema.org Organization, WebSite, Service, WebPage, CollectionPage, and current position ItemList objects.
+- `jobs.json`: the generated list of position documents.
+
+Each built HTML page also contains canonical metadata and embedded JSON-LD. No JobPosting rich-result claims are generated from filenames, which lack verified employment details.
+
+`site.config.json` controls the canonical base URL and indexing. The preview retains `noindex, nofollow`; creating a sitemap does not enable indexing. A robots file only controls crawling when served at the host root `/robots.txt`. The current GitHub Pages project URL is a subfolder, so its published robots file is ready for the final domain but does not control the entire github.io host.
+
+Run `node scripts/test-metadata.mjs` after building to verify discovery files, JSON-LD references, sitemap URLs, LLM links, and preview indexing. This test runs in GitHub Actions before deployment.

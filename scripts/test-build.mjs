@@ -7,6 +7,8 @@ const fixture = await mkdtemp(path.join(tmpdir(), 'sopliance-jobs-test-'));
 try {
   for (const dir of ['scripts', 'positions', 'assets']) await mkdir(path.join(fixture, dir));
   await copyFile('scripts/build.mjs', path.join(fixture, 'scripts/build.mjs'));
+  await copyFile('scripts/metadata.mjs', path.join(fixture, 'scripts/metadata.mjs'));
+  await copyFile('site.config.json', path.join(fixture, 'site.config.json'));
   for (const file of ['index.html', 'joinus.html', 'styles.css', 'site.js', '.nojekyll']) await copyFile(file, path.join(fixture, file));
   for (let i = 1; i <= 55; i++) await writeFile(path.join(fixture, 'positions', `Support Technician ${i}.txt`), `Test description ${i}`);
   const special = 'Fiber & Desktop_Engineer #1.md';
@@ -18,6 +20,9 @@ try {
   build();
   let jobs = JSON.parse(await readFile(path.join(fixture, 'dist/jobs.json'), 'utf8'));
   assert.equal(jobs.length, 56);
+  let graph = JSON.parse(await readFile(path.join(fixture, 'dist/structured-data.json'), 'utf8'));
+  assert.equal(graph['@graph'].find(item => item['@type'] === 'ItemList').numberOfItems, 56);
+  assert((await readFile(path.join(fixture, 'dist/llms-full.txt'), 'utf8')).includes('Support Technician 55'));
   assert.equal(jobs[0].title, 'Fiber & Desktop Engineer #1');
   assert.equal(jobs[0].url, `positions/${encodeURIComponent(special)}`);
   assert.equal(await readFile(path.join(fixture, 'dist/positions', special), 'utf8'), 'Test description');
@@ -26,10 +31,19 @@ try {
   build();
   jobs = JSON.parse(await readFile(path.join(fixture, 'dist/jobs.json'), 'utf8'));
   assert.equal(jobs.length, 55);
+  graph = JSON.parse(await readFile(path.join(fixture, 'dist/structured-data.json'), 'utf8'));
+  assert.equal(graph['@graph'].find(item => item['@type'] === 'ItemList').numberOfItems, 55);
+  assert(!(await readFile(path.join(fixture, 'dist/llms-full.txt'), 'utf8')).includes('Fiber & Desktop Engineer #1'));
   await assert.rejects(access(path.join(fixture, 'dist/positions', special)));
   for (let i = 1; i <= 55; i++) await rm(path.join(fixture, 'positions', `Support Technician ${i}.txt`));
   build();
   assert.deepEqual(JSON.parse(await readFile(path.join(fixture, 'dist/jobs.json'), 'utf8')), []);
+  await writeFile(path.join(fixture, 'site.config.json'), JSON.stringify({ baseUrl: 'https://sopliance.com/', indexable: true }));
+  build();
+  const production = await readFile(path.join(fixture, 'dist/index.html'), 'utf8');
+  assert(production.includes('content="index, follow"'));
+  assert(production.includes('rel="canonical" href="https://sopliance.com/"'));
+  assert(!(await readFile(path.join(fixture, 'dist/structured-data.json'), 'utf8')).includes('ronmenator.github.io'));
   console.log('Passed: 56 jobs, title formatting, encoded links, document copy, sorting, exclusions, removal, and empty list.');
 } finally {
   await rm(fixture, { recursive: true, force: true });
