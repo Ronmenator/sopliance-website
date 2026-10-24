@@ -1,5 +1,7 @@
 # SOPliance website
 
+**Production launch is blocked until the Terms of Use, Privacy Policy, and Cookie Policy are approved and finalized.** See [LAUNCH-CHECKLIST.md](LAUNCH-CHECKLIST.md). Development previews may continue; publishing drafts does not satisfy this requirement.
+
 Working folder: `D:\websites\Sopliance`.
 Preview: https://ronmenator.github.io/sopliance-website/
 
