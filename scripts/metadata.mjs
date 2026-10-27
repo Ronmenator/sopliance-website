@@ -7,7 +7,7 @@ export async function generateMetadata(root, output, jobs) {
   if (base.protocol !== 'https:' || !base.pathname.endsWith('/') || base.search || base.hash) throw new Error('baseUrl must be an HTTPS URL ending in / without query or fragment');
   if (typeof config.indexable !== 'boolean') throw new Error('indexable must be a boolean');
   const url = relative => new URL(relative, base).href;
-  const org = { '@type': 'Organization', '@id': url('#organization'), name: 'SOPliance', legalName: 'SOPliance, Inc.', url: base.href, email: 'info@sopliance.com', logo: url('assets/logo-header.png'), sameAs: ['https://www.linkedin.com/company/sopliance-inc'] };
+  const org = { '@type': 'Organization', '@id': url('#organization'), name: 'SOPliance', legalName: 'SOPliance Inc', url: base.href, email: 'info@sopliance.com', logo: url('assets/logo-header.png'), sameAs: ['https://www.linkedin.com/company/sopliance-inc'] };
   const website = { '@type': 'WebSite', '@id': url('#website'), url: base.href, name: 'SOPliance', inLanguage: 'en', publisher: { '@id': org['@id'] } };
   const services = [
     ['staffing', 'Staffing solutions', 'Staff augmentation, recruitment and placement, and project-based talent.'],

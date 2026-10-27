@@ -21,7 +21,7 @@ Pending. Record the approver, approval date, and final version or commit for eac
 The website Terms and Conditions have been revised using the owner-supplied document dated October 27, 2026. This is a revised draft, not an approval. Privacy and Cookie policies remain separate drafts.
 
 - [x] Mailing address confirmed by the owner on October 27, 2026: 113 South Monroe Street -1St Floor PMB# 6294, Tallahassee, FL 32301.
-- [ ] Confirm the exact legal company-name styling before final approval.
+- [x] Owner confirmed the exact legal name as SOPliance Inc on October 27, 2026. Updated website pages and structured metadata to match.
 - [ ] Review the owner-stated 18+ application requirement for the roles and jurisdictions served. The draft now applies it to job applications, not general browsing. The owner clarified this preference on October 27, 2026; this does not establish that it is required by law for every role.
 - [x] Owner selected a USD 100 aggregate website liability cap on October 27, 2026, similar to the approach discussed for Adecco. This supersedes the earlier draft without a fixed cap.
 - [ ] Have counsel review the USD 100 cap, website warranty disclaimer, indirect-loss exclusions, and mandatory-rights exceptions. The cap is for website claims, not a replacement for liability terms in separate service agreements. Owner selection of the approach does not finalize the policy.
@@ -124,3 +124,5 @@ The owner suspects CCPA non-applicability. No exemption determination has been r
 - Owner believes no client identifies SOPliance as a CCPA service provider. This is a tentative statement, not a completed contract review; actual processing arrangements and terms matter as well as labels.
 - Related-company coverage was not confirmed. Applicable buying/selling/sharing volume and recruitment-disclosure classification remain to be checked. Previously confirmed no sale/licensing or targeted-advertising use remains recorded.
 - Working assessment: potential non-applicability as a covered business; do not represent a verified blanket exemption. Retain conditional California rights wording and CalOPPA disclosures pending final review. No confidential revenue figure has been added to the public policy page.
+
+Owner reaffirmed retaining conditional CCPA/CPRA wording (where applicable). This does not record final policy approval.
