@@ -53,7 +53,8 @@ These procedural decisions do not approve the current drafts for production. The
 - [ ] Confirm the preceding-12-month inventory of information categories, sources, purposes, recipients, and sale/sharing status. Current-practice confirmations are not a completed historical audit.
 - [x] Owner selected two years from the last interaction for applications, recruitment records, and inquiry correspondence on October 27, 2026, subject to legal holds and recordkeeping exceptions.
 - [ ] Implement and verify the retention/disposal procedure for active records, archived email, backups, and required client/provider notifications. Confirm legal exceptions and record-specific requirements; no automated deletion system has been added.
-- [ ] Establish a monitored privacy-request process, authorized-agent handling, appropriate verification, response deadlines, and any required toll-free number or additional request method. Do not assume the exclusively-online-business exception applies to a staffing/service company.
+- [x] Owner confirmed on October 27, 2026 that privacy operations are taken care of. This records the owner confirmation, not an independent operational audit.
+- [ ] Resolve any CCPA-specific additional request-method requirements after determining applicability; do not assume the exclusively-online-business exception applies.
 - [ ] Review whether recruitment disclosures constitute sale, sharing, business-purpose disclosure, or an applicable exception under the actual arrangements. Recruitment disclosures and cross-context behavioral advertising are not interchangeable terms.
 - [ ] Verify the no-sale/no-advertising practices and the described DNT/GPC behavior against the final production system. Add any required opt-out links, signal handling, sensitive-information controls, or notices before introducing relevant processing.
 - [ ] Confirm the child-information reporting and deletion procedure. No age-verification gate has been added, and the policy does not promise that hosting or font providers receive no technical requests from child visitors.
@@ -110,3 +111,9 @@ Current source review found no cookie or browser-storage writes and no analytics
 - [ ] Audit the final production host, all resource requests and browser storage in a clean browser; confirm any provider cookies and document their names, purposes, types and durations if present.
 - [ ] Confirm whether the final host, external fonts or future integrations require additional notices, consent controls or signal handling. Implement required controls before the relevant processing begins.
 - [ ] Approve and finalize the Cookie Policy and its effective date. The production launch blocker remains unchanged.
+
+## Retention and CCPA follow-up — October 27, 2026
+
+The owner flagged residual email copies in backups. The privacy draft now distinguishes the ordinary two-year active-record schedule from residual disaster-recovery copies; it does not promise complete erasure of every copy on the anniversary. Verify backup expiry/overwrite schedules, access restrictions, deletion reapplication following restoration, and legal exceptions before final approval. Routinely accessible email archives remain subject to the active-record schedule.
+
+The owner suspects CCPA non-applicability. No exemption determination has been recorded. Confirm preceding-year gross revenue, applicable buy/sell/share volumes, related-entity coverage, and client service-provider/contractor obligations against current official guidance. Do not infer an exemption from Florida headquarters or the absence of data sales alone.
