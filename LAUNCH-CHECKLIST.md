@@ -126,3 +126,9 @@ The owner suspects CCPA non-applicability. No exemption determination has been r
 - Working assessment: potential non-applicability as a covered business; do not represent a verified blanket exemption. Retain conditional California rights wording and CalOPPA disclosures pending final review. No confidential revenue figure has been added to the public policy page.
 
 Owner reaffirmed retaining conditional CCPA/CPRA wording (where applicable). This does not record final policy approval.
+
+## Separation of website and corporate agreements — October 27, 2026
+
+At the owner's request, website Terms now expressly govern browsing/informational use only; business engagements and placements are governed by separately signed offline Terms of Business and engagement agreements, subject to law. Privacy now distinguishes its transparency disclosures from corporate contractual liability allocated in executed DPAs and signed engagement agreements. No universal DPA coverage or immunity from claims is asserted.
+
+- [ ] Check these clauses against the actual Terms of Business, DPA scope, and order-of-precedence language before final approval. Confirm the separately signed agreement process matches actual engagements. The website language does not create or execute those contracts.
