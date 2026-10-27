@@ -117,3 +117,10 @@ Current source review found no cookie or browser-storage writes and no analytics
 The owner flagged residual email copies in backups. The privacy draft now distinguishes the ordinary two-year active-record schedule from residual disaster-recovery copies; it does not promise complete erasure of every copy on the anniversary. Verify backup expiry/overwrite schedules, access restrictions, deletion reapplication following restoration, and legal exceptions before final approval. Routinely accessible email archives remain subject to the active-record schedule.
 
 The owner suspects CCPA non-applicability. No exemption determination has been recorded. Confirm preceding-year gross revenue, applicable buy/sell/share volumes, related-entity coverage, and client service-provider/contractor obligations against current official guidance. Do not infer an exemption from Florida headquarters or the absence of data sales alone.
+
+### Owner applicability clarification — October 27, 2026
+
+- Owner confirmed annual gross revenue below USD 26 million, below the current USD 26.625 million CCPA revenue threshold. Confirm the relevant preceding-calendar-year basis in the final assessment.
+- Owner believes no client identifies SOPliance as a CCPA service provider. This is a tentative statement, not a completed contract review; actual processing arrangements and terms matter as well as labels.
+- Related-company coverage was not confirmed. Applicable buying/selling/sharing volume and recruitment-disclosure classification remain to be checked. Previously confirmed no sale/licensing or targeted-advertising use remains recorded.
+- Working assessment: potential non-applicability as a covered business; do not represent a verified blanket exemption. Retain conditional California rights wording and CalOPPA disclosures pending final review. No confidential revenue figure has been added to the public policy page.
