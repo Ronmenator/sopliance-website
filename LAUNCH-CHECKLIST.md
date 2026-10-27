@@ -7,7 +7,7 @@
 Recorded at the owner's direction on October 24, 2026. This requirement applies to the production launch, including switching SOPliance.com to this site or enabling production search indexing. Development previews may continue.
 
 - [ ] Terms of Use approved and finalized.
-- [ ] Privacy Policy approved and finalized, including confirmed application and correspondence retention periods.
+- [ ] Privacy Policy approved and finalized, including implementation of the selected two-year application/correspondence retention period and applicable legal exceptions.
 - [ ] Cookie Policy approved and finalized for the actual production hosting, fonts, and tracking configuration.
 - [ ] Final approved versions replace the drafts, with effective dates and draft labels removed.
 - [ ] Approval and finalization are recorded below before the production launch proceeds.
@@ -48,10 +48,11 @@ These procedural decisions do not approve the current drafts for production. The
 
 - [x] Owner confirmed SOPliance does not sell or license applicant/contact data and does not use or disclose it for targeted advertising.
 - [x] Owner confirmed SOPliance does not collect sensitive data in its hiring process. Revisit the scope if onboarding, payroll, background checks, or other processing is added later.
-- [x] Owner confirmed no collection from children under 13, general browsing allowed, and applications restricted to 18+. The draft says no knowing direct collection from children and separately discloses automatic hosting/font requests.
+- [x] Owner selected an under-16 children's privacy threshold, general browsing allowed, and applications restricted to 18+, on October 27, 2026. This supersedes the earlier under-13 policy wording; it does not redefine COPPA's legal age threshold. The draft separately discloses automatic hosting/font requests.
 - [ ] Determine CCPA applicability to SOPliance's actual operations, including California applicant and business-contact information, applicable thresholds, related-entity rules, and service-provider or contractor obligations. Do not label the site CCPA compliant merely because rights text was added.
 - [ ] Confirm the preceding-12-month inventory of information categories, sources, purposes, recipients, and sale/sharing status. Current-practice confirmations are not a completed historical audit.
-- [ ] Finalize application and correspondence retention periods and category-specific retention disclosures or criteria. Confirm operational handling of correction, deletion, legal holds, and client disclosures.
+- [x] Owner selected two years from the last interaction for applications, recruitment records, and inquiry correspondence on October 27, 2026, subject to legal holds and recordkeeping exceptions.
+- [ ] Implement and verify the retention/disposal procedure for active records, archived email, backups, and required client/provider notifications. Confirm legal exceptions and record-specific requirements; no automated deletion system has been added.
 - [ ] Establish a monitored privacy-request process, authorized-agent handling, appropriate verification, response deadlines, and any required toll-free number or additional request method. Do not assume the exclusively-online-business exception applies to a staffing/service company.
 - [ ] Review whether recruitment disclosures constitute sale, sharing, business-purpose disclosure, or an applicable exception under the actual arrangements. Recruitment disclosures and cross-context behavioral advertising are not interchangeable terms.
 - [ ] Verify the no-sale/no-advertising practices and the described DNT/GPC behavior against the final production system. Add any required opt-out links, signal handling, sensitive-information controls, or notices before introducing relevant processing.
@@ -62,7 +63,7 @@ Review references: [California Privacy Protection Agency FAQs](https://cppa.ca.g
 
 ## Comparison with supplied privacy example on October 27 2026
 
-The supplied example was used as a coverage guide, not as confirmation of actual practices. The owner separately confirmed no marketing emails or SMS; recruitment correspondence relates to a position the applicant applied for. Retention is still undecided.
+The supplied example was used as a coverage guide, not as confirmation of actual practices. The owner separately confirmed no marketing emails or SMS; recruitment correspondence relates to a position the applicant applied for. Retention was undecided during the example comparison; the owner subsequently selected two years from the last interaction on October 27, 2026.
 
 | Example topic | Treatment in the revised draft |
 | --- | --- |
@@ -74,10 +75,10 @@ The supplied example was used as a coverage guide, not as confirmation of actual
 | Recipients | Retained résumé disclosures to clients and known hosting/font/email provider categories. No blanket affiliate or public-user disclosure clause was adopted. |
 | Legal requirements and business transfers | Added qualified legal, safety, claims and exceptional ownership-transfer provisions for review. These do not authorize routine data sales. |
 | International processing | Added transfer-location and legal-safeguard review language without asserting unverified transfer arrangements. |
-| Retention | Did not copy the sample's 24-month periods. A role- and record-specific schedule, start events, legal holds, provider retention and disposal procedures remain to be approved. |
+| Retention | The owner subsequently selected two years from the last interaction for applications and correspondence. Legal exceptions, independent provider retention, and operational disposal procedures still need review. |
 | Deletion and backups | Explained contact-based requests and legal exceptions; no nonexistent account deletion, encrypted backups or automatic anonymization was promised. |
 | Security | Retained no absolute-security guarantee and flagged verification of mailbox access, recipients, incident response and disposal practices. |
-| Children | Preserved the owner's under-13 direct-collection policy and 18+ application requirement, rather than copying the example's under-16 threshold. |
+| Children | The owner subsequently selected the under-16 direct-collection threshold. General browsing remains allowed; applications remain 18+. |
 | External websites and revisions | Expanded external-link scope and the material-privacy-change notice process; retained effective-date approval requirement. |
 | CalOPPA and CCPA/CPRA | Retained the added California rights, request procedures, data categories, DNT/GPC disclosures and pending applicability/historical-inventory review. |
 
@@ -87,4 +88,4 @@ Retention comparisons, for decision support only, checked October 27, 2026:
 - [Randstad global candidate notice](https://www.randstad.com/your-privacy-a-candidate/): candidate data may be retained for two years from the last interaction. This is a global notice, not a verified statement of every Randstad US retention rule.
 - [FTC retention guidance](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business): establish a written schedule based on business need and legal obligations. Confirm employment-record requirements and contractual obligations with counsel before selecting SOPliance's schedule.
 
-No retention period has been selected, implemented, or approved by these comparisons.
+The comparisons did not themselves select or implement a retention period. The owner subsequently selected two years from the last interaction on October 27, 2026. The operational procedure and the complete policy remain pending final review and approval.
