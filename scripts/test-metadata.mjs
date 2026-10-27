@@ -12,6 +12,7 @@ const ids = new Set(graph['@graph'].map(item => item['@id']));
 assert.equal(ids.size, graph['@graph'].length, 'Duplicate JSON-LD IDs');
 for (const node of graph['@graph']) {
   assert(node['@type'] && node['@id']);
+  assert(!/\bdraft\b/i.test(node.description || ''), 'Stale draft description in structured metadata');
   assert.notEqual(node['@type'], 'JobPosting', 'Do not invent job details from filenames');
   for (const property of ['publisher', 'provider', 'isPartOf', 'about', 'mainEntity']) {
     if (node[property]) assert(ids.has(node[property]['@id']), `Unresolved ${property} reference`);
@@ -34,6 +35,7 @@ for (const page of ['index.html', 'joinus.html', 'terms.html', 'privacy.html', '
 for (const file of ['llms.txt', 'llms-full.txt']) {
   const text = await read(file);
   assert(text.startsWith('# SOPliance'));
+  assert(!/draft for company|privacy draft|terms draft|pending approval/i.test(text), 'Internal policy review notes in LLM files');
   assert(!text.includes('Loading available positions'), 'Stale loading text in LLM content');
   for (const match of text.matchAll(/\]\((https:\/\/[^)]+)\)/g)) {
     if (!match[1].startsWith(base.href)) continue;
