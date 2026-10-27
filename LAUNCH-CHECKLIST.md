@@ -132,3 +132,7 @@ Owner reaffirmed retaining conditional CCPA/CPRA wording (where applicable). Thi
 At the owner's request, website Terms now expressly govern browsing/informational use only; business engagements and placements are governed by separately signed offline Terms of Business and engagement agreements, subject to law. Privacy now distinguishes its transparency disclosures from corporate contractual liability allocated in executed DPAs and signed engagement agreements. No universal DPA coverage or immunity from claims is asserted.
 
 - [ ] Check these clauses against the actual Terms of Business, DPA scope, and order-of-precedence language before final approval. Confirm the separately signed agreement process matches actual engagements. The website language does not create or execute those contracts.
+
+## Website liability structure selected — October 27, 2026
+
+Owner requested broad website loss/damage exclusions followed by a USD 100 aggregate fallback cap if liability is nevertheless established, similar in structure to Adecco US. Section 10 now follows that approach, includes direct and indirect loss categories, preserves fraud/intentional-misconduct and mandatory-law exceptions, and expressly excludes signed business, employment, placement, service and applicable DPA obligations from this website provision. This is an approved drafting direction, not final policy approval or a finding of enforceability. Final legal review remains pending.
