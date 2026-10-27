@@ -89,3 +89,24 @@ Retention comparisons, for decision support only, checked October 27, 2026:
 - [FTC retention guidance](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business): establish a written schedule based on business need and legal obligations. Confirm employment-record requirements and contractual obligations with counsel before selecting SOPliance's schedule.
 
 The comparisons did not themselves select or implement a retention period. The owner subsequently selected two years from the last interaction on October 27, 2026. The operational procedure and the complete policy remain pending final review and approval.
+
+## Cookie example comparison from October 27 2026
+
+The owner-supplied cookie example was used to expand `cookies.html`. It did not authorize adding cookies or tracking to the site.
+
+| Example topic | Treatment in the cookie draft |
+| --- | --- |
+| Definitions | Added company and website scope, personal-information context, session/persistent and first-/third-party cookie explanations, browser storage and beacon definitions. |
+| Necessary and functionality cookies | Replaced unsupported login/authentication/preference cookie claims with an explicit current inventory: none set by the SOPliance page code. |
+| Analytics, advertising and consent records | Explicitly none in the current page code; no cookie banner or preference tool is claimed to exist. |
+| Browser choices | Added verified official Chrome, Edge, Firefox and Safari help links. Clarified that users need not disable cookies before browsing and that clearing cookies does not delete emailed applications. |
+| Providers and other requests | Retained GitHub Pages logging, Google Fonts connections and third-party policy links. No claim that cookie settings prevent network requests or provider logs. |
+| DNT and GPC | Aligned with the Privacy Policy's actual behavior and confirmed no-sale/no-advertising practices; did not invent automatic opt-out handling. |
+| Future consent | Added conditions for reviewing inventory and implementing legally required prior-consent, refusal and withdrawal controls before introducing relevant technologies. |
+| Updates and contact | Updated the draft date to October 27, 2026, added the confirmed postal address, and retained the pending effective date and privacy-change notice requirements. |
+
+Current source review found no cookie or browser-storage writes and no analytics/tracking scripts in `site.js`; Google Fonts remains externally loaded in `styles.css`. A current homepage HTTP response had no Set-Cookie header. These checks do not replace a production browser/provider audit or legal approval.
+
+- [ ] Audit the final production host, all resource requests and browser storage in a clean browser; confirm any provider cookies and document their names, purposes, types and durations if present.
+- [ ] Confirm whether the final host, external fonts or future integrations require additional notices, consent controls or signal handling. Implement required controls before the relevant processing begins.
+- [ ] Approve and finalize the Cookie Policy and its effective date. The production launch blocker remains unchanged.
