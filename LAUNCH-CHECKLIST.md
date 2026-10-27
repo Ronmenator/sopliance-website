@@ -59,3 +59,32 @@ These procedural decisions do not approve the current drafts for production. The
 - [ ] Approve the CalOPPA material-privacy-change notification process, final effective date, final provider disclosures, and the policy as a whole. This is distinct from the Terms' changes-on-posting clause.
 
 Review references: [California Privacy Protection Agency FAQs](https://cppa.ca.gov/faq.html), [California Attorney General CalOPPA guidance](https://oag.ca.gov/sites/all/files/agweb/pdfs/cybersecurity/making_your_privacy_practices_public.pdf), and [FTC COPPA FAQs](https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions).
+
+## Comparison with supplied privacy example on October 27 2026
+
+The supplied example was used as a coverage guide, not as confirmation of actual practices. The owner separately confirmed no marketing emails or SMS; recruitment correspondence relates to a position the applicant applied for. Retention is still undecided.
+
+| Example topic | Treatment in the revised draft |
+| --- | --- |
+| Definitions and company contact | Added concise scope and personal-information definitions and the confirmed postal address. |
+| Accounts, mobile app, login and public areas | Not adopted; these features are absent from the current site. |
+| Usage information | Kept provider-specific hosting/font request disclosures; did not invent visit-duration analytics, mobile IDs, or tracking. |
+| Cookies and web beacons | Retained the verified no-cookie/no-analytics description; did not invent essential, consent or functionality cookies. |
+| Purposes and communications | Added explicit no marketing emails/no SMS; applicant communications concern an applied-for position. No general talent-pool outreach or newsletter permission was introduced. |
+| Recipients | Retained résumé disclosures to clients and known hosting/font/email provider categories. No blanket affiliate or public-user disclosure clause was adopted. |
+| Legal requirements and business transfers | Added qualified legal, safety, claims and exceptional ownership-transfer provisions for review. These do not authorize routine data sales. |
+| International processing | Added transfer-location and legal-safeguard review language without asserting unverified transfer arrangements. |
+| Retention | Did not copy the sample's 24-month periods. A role- and record-specific schedule, start events, legal holds, provider retention and disposal procedures remain to be approved. |
+| Deletion and backups | Explained contact-based requests and legal exceptions; no nonexistent account deletion, encrypted backups or automatic anonymization was promised. |
+| Security | Retained no absolute-security guarantee and flagged verification of mailbox access, recipients, incident response and disposal practices. |
+| Children | Preserved the owner's under-13 direct-collection policy and 18+ application requirement, rather than copying the example's under-16 threshold. |
+| External websites and revisions | Expanded external-link scope and the material-privacy-change notice process; retained effective-date approval requirement. |
+| CalOPPA and CCPA/CPRA | Retained the added California rights, request procedures, data categories, DNT/GPC disclosures and pending applicability/historical-inventory review. |
+
+Retention comparisons, for decision support only, checked October 27, 2026:
+
+- [Adecco Group candidate retention table](https://www.adeccogroup.com/privacy-policy/candidate-retention-periods-en): USA candidate information is listed as two years from the candidate's last activity. This does not set SOPliance's period or cover all employment, financial or dispute records.
+- [Randstad global candidate notice](https://www.randstad.com/your-privacy-a-candidate/): candidate data may be retained for two years from the last interaction. This is a global notice, not a verified statement of every Randstad US retention rule.
+- [FTC retention guidance](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business): establish a written schedule based on business need and legal obligations. Confirm employment-record requirements and contractual obligations with counsel before selecting SOPliance's schedule.
+
+No retention period has been selected, implemented, or approved by these comparisons.
