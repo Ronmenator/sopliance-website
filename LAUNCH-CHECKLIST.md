@@ -136,3 +136,7 @@ At the owner's request, website Terms now expressly govern browsing/informationa
 ## Website liability structure selected — October 27, 2026
 
 Owner requested broad website loss/damage exclusions followed by a USD 100 aggregate fallback cap if liability is nevertheless established, similar in structure to Adecco US. Section 10 now follows that approach, includes direct and indirect loss categories, preserves fraud/intentional-misconduct and mandatory-law exceptions, and expressly excludes signed business, employment, placement, service and applicable DPA obligations from this website provision. This is an approved drafting direction, not final policy approval or a finding of enforceability. Final legal review remains pending.
+
+## Public policy editorial cleanup — October 27, 2026
+
+At the owner's request, removed draft labels and internal review/approval notes from public policy pages. Last-updated dates remain; no effective date or final approval was inferred. Approval records and the production launch restriction remain in force. Unresolved applicability, historical inventory, provider/transfer, request-method and backup verification items remain above. This cleanup does not establish these facts or complete those reviews.
