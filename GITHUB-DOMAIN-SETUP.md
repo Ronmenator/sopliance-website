@@ -43,5 +43,7 @@ Official instructions: https://docs.github.com/en/pages/configuring-a-custom-dom
 - Owner production approval recorded.
 - GitHub Pages custom domain set to sopliance.com using repository Pages API; confirmed returned cname.
 - Production base URL and indexing enabled in source; all metadata checks pass.
-- GoDaddy login required before DNS can be changed. Website DNS remains on Azure pending sign-in.
+- All four apex A records saved in GoDaddy; owner changed www CNAME to ronmenator.github.io. Google public DNS confirms correct apex and www records. Local resolver and GitHub apex validation still have stale Azure routing during propagation.
 - GitHub currently reports no issued certificate and HTTPS enforcement unavailable for the new domain. Enable HTTPS after DNS/certificate validation.
+
+HTTPS activation attempt November 4, 2026: GitHub returned HTTP 404, "The certificate does not exist yet". GitHub health reports www HTTPS-eligible, apex not yet eligible due to a non-GitHub address in its current DNS view. No HTTPS enforcement is claimed until verified.
