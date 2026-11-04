@@ -1,6 +1,6 @@
 # SOPliance.com on GitHub Pages
 
-Prepared November 4, 2026. Production switch pending owner policy approval and DNS access. Current live domain points to Azure; GitHub preview remains active.
+Prepared November 4, 2026. Owner approved all three policies November 4, 2026. GitHub custom domain is configured; GoDaddy DNS change and HTTPS verification remain pending. Current live domain points to Azure; GitHub preview remains active.
 
 ## Verified production configuration
 
@@ -37,3 +37,11 @@ With sopliance.com as the configured custom domain and correct DNS, GitHub redir
 Observed previous website records: apex A 20.49.104.10; www CNAME sopliance.azurewebsites.net. Recheck and save the complete DNS record set before making changes; these observations are not a complete rollback backup.
 
 Official instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+## Cutover progress — November 4, 2026
+
+- Owner production approval recorded.
+- GitHub Pages custom domain set to sopliance.com using repository Pages API; confirmed returned cname.
+- Production base URL and indexing enabled in source; all metadata checks pass.
+- GoDaddy login required before DNS can be changed. Website DNS remains on Azure pending sign-in.
+- GitHub currently reports no issued certificate and HTTPS enforcement unavailable for the new domain. Enable HTTPS after DNS/certificate validation.

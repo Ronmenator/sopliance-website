@@ -1,6 +1,6 @@
 # SOPliance website
 
-**Production launch is blocked until the Terms of Use, Privacy Policy, and Cookie Policy are approved and finalized.** See [LAUNCH-CHECKLIST.md](LAUNCH-CHECKLIST.md). Development previews may continue; publishing drafts does not satisfy this requirement.
+**Owner approved the Terms, Privacy, and Cookie policies for production on November 4, 2026.** See [LAUNCH-CHECKLIST.md](LAUNCH-CHECKLIST.md) for the approval record. Production hosting: GitHub Pages at https://sopliance.com/. DNS cutover status is tracked in [GITHUB-DOMAIN-SETUP.md](GITHUB-DOMAIN-SETUP.md).
 
 Working folder: `D:\websites\Sopliance`.
 Preview: https://ronmenator.github.io/sopliance-website/

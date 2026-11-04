@@ -2,19 +2,19 @@
 
 ## Launch blocker
 
-**Do not launch the production website until all three policies are approved and finalized.**
+**Policy launch hold resolved: owner approved all three policies for production on November 4, 2026.**
 
 Recorded at the owner's direction on October 24, 2026. This requirement applies to the production launch, including switching SOPliance.com to this site or enabling production search indexing. Development previews may continue.
 
-- [ ] Terms of Use approved and finalized.
-- [ ] Privacy Policy approved and finalized, including implementation of the selected two-year application/correspondence retention period and applicable legal exceptions.
-- [ ] Cookie Policy approved and finalized for the actual production hosting, fonts, and tracking configuration.
-- [ ] Final approved versions replace the drafts, with effective dates and draft labels removed.
-- [ ] Approval and finalization are recorded below before the production launch proceeds.
+- [x] Terms of Use approved and finalized.
+- [x] Privacy Policy approved for production by the owner, including the selected two-year active-record retention wording and backup qualification. Operational implementation has not been independently verified.
+- [x] Cookie Policy approved and finalized for the actual production hosting, fonts, and tracking configuration.
+- [x] Final approved versions replace the drafts, with effective dates and draft labels removed.
+- [x] Approval and finalization are recorded below before the production launch proceeds.
 
 ## Approval record
 
-Pending. Record the approver, approval date, and final version or commit for each policy here. Do not infer approval from the presence of policy pages, passing automated checks, or continued development work.
+Owner explicitly approved the Terms, Privacy, and Cookie policies for production in this chat on November 4, 2026. Approved substantive baseline: commit ea1563d. Publication revision sets effective/updated dates to November 4, 2026 and identifies GitHub Pages as production hosting. This approval is an owner decision, not an independent legal or operational audit. Earlier unresolved review entries below are historical records; approval does not assert those checks were independently performed.
 
 ## Terms review decisions from October 27 2026
 
@@ -140,3 +140,7 @@ Owner requested broad website loss/damage exclusions followed by a USD 100 aggre
 ## Public policy editorial cleanup — October 27, 2026
 
 At the owner's request, removed draft labels and internal review/approval notes from public policy pages. Last-updated dates remain; no effective date or final approval was inferred. Approval records and the production launch restriction remain in force. Unresolved applicability, historical inventory, provider/transfer, request-method and backup verification items remain above. This cleanup does not establish these facts or complete those reviews.
+
+## Production hosting authorization — November 4, 2026
+
+Owner selected GitHub Pages for sopliance.com, confirmed GoDaddy DNS, and explicitly approved all three policies for production. Proceed with custom-domain configuration and DNS cutover. No independent claim is made that backup procedures or legal analysis were audited.
