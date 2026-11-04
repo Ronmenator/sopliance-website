@@ -47,3 +47,7 @@ Official instructions: https://docs.github.com/en/pages/configuring-a-custom-dom
 - GitHub currently reports no issued certificate and HTTPS enforcement unavailable for the new domain. Enable HTTPS after DNS/certificate validation.
 
 HTTPS activation attempt November 4, 2026: GitHub returned HTTP 404, "The certificate does not exist yet". GitHub health reports www HTTPS-eligible, apex not yet eligible due to a non-GitHub address in its current DNS view. No HTTPS enforcement is claimed until verified.
+
+## HTTPS completed — November 4, 2026
+
+After public Google and Cloudflare resolvers confirmed correct DNS, removed and re-added the same custom domain to restart GitHub certificate provisioning per GitHub troubleshooting guidance. GitHub reports certificate approved for sopliance.com and www.sopliance.com, expiring February 2, 2027; HTTPS enforcement is enabled. Direct GitHub endpoint checks with normal certificate validation return HTTPS 200 for apex and HTTPS 301 from www to apex. All five pages and discovery files return HTTPS 200. Some resolver caches and the Pages health report may temporarily retain older results. This completion entry supersedes earlier pending-certificate notes.
